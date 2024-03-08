@@ -1,0 +1,298 @@
+.ContainH{
+    background-color: rgba(2, 7, 57, 0.897);
+    padding-left: 60px;
+}
+.hYamI{
+    width: 70%;
+    right: 0;
+}
+.BlockH1{
+    width: 100%;
+    display: flex;
+}
+.BlockH1 p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 70px;
+    line-height: 60px;
+}
+.PodBlH11{
+    width: 30%;
+    padding-top: 60px;
+}
+.Backrooms{
+    position: absolute;
+    left: 0;
+    margin-top: 55px;
+    width: 8%;
+}
+.numberPB1{
+    margin-top: 350px;
+    margin-bottom: 20px;
+}
+.BlockH2 h1{
+    font-size: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.BlockH2{
+    margin-top: 500px;
+    padding-right: 60px;
+    width: 100%;
+}
+.BlockH3{
+    margin-top: 250px;
+    padding-right: 60px;
+    width: 100%;
+    padding-bottom: 350px;
+}
+.PodBlH21{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.Losos{
+    width: 22%;
+    position: absolute;
+    margin-left: 35%;
+}
+.Backrooms2{
+    position: absolute;
+    margin-top: 150px;
+    width: 15%;
+    right: 0;
+}
+.BasketB{
+    border: none;
+    cursor: pointer;
+    background-image: url(./assets/BasketKn.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 67px;
+    height: 68px;
+    position: absolute;
+    left: 47.32%;
+    top: 1170px;
+}
+.BasketB2{
+    border: none;
+    cursor: pointer;
+    background-image: url(./assets/BasketKn.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 67px;
+    height: 68px;
+    margin-left: 60px;
+}
+.PodPodPodBlH221{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 197%;
+}
+.PodPodBlH221{
+    display: flex;
+    justify-content: space-between;
+}
+.PodPodBlH222{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+.PodBlH22{
+    margin-top: 100px;
+}
+.BludoH{
+    width: 15.292%;
+}
+.BludoH img{
+    width: 100%;
+}
+.BludoH h4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 240%;
+    color: white;
+}
+.butonGrB{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 20%;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.BludoH p{
+    margin-top: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 160%;
+    color: grey;
+}
+.PodPodPodBlH2213{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 263%;
+}
+.PodPodPodBlH2213 h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 240%;
+    color: rgb(255, 255, 255);
+}
+.PodPodPodBlH221 h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 240%;
+    color: rgb(255, 255, 255);
+}
+.NedoSlid{
+    margin-top: 110px;
+    justify-content: space-around;
+    display: flex;
+}
+.NedoSlid div{
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.NedoSlid a{
+    width: 15%;
+    text-decoration: none;
+}
+.ZoglB{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 650%;
+    display: flex;
+    justify-content: center;
+}
+.blockNSl0{
+    height: 500px;
+    background-image: url(./assetsBluda/Group0.png);
+    transition:2s;
+}
+.blockNSl1{
+    height: 500px;
+    background-image: url(./assetsBluda/Group1.png);
+    transition:2s;
+}
+.blockNSl2{
+    height: 500px;
+    background-image: url(./assetsBluda/Group2.png);
+    transition:2s;
+}
+.blockNSl3{
+    height: 500px;
+    background-image: url(./assetsBluda/Group3.png);
+    transition:2s;
+}
+.blockNSl4{
+    height: 500px;
+    background-image: url(./assetsBluda/Group4.png);
+    transition:2s;
+}
+.blockNSl5{
+    height: 500px;
+    background-image: url(./assetsBluda/Group5.png);
+    transition:2s;
+}
+.blockNSl0:hover{
+    scale: 110%;
+}
+.blockNSl1:hover{
+    scale: 110%;
+}
+.blockNSl2:hover{
+    scale: 110%;
+}
+.blockNSl3:hover{
+    scale: 110%;
+}
+.blockNSl4:hover{
+    scale: 110%;
+}
+.blockNSl5:hover{
+    scale: 110%;
+}
+.blockNSl0:hover p{
+    text-decoration: underline;
+}
+.blockNSl1:hover p{
+    text-decoration: underline;
+}
+.blockNSl2:hover p{
+    text-decoration: underline;
+}
+.blockNSl3:hover p{
+    text-decoration: underline;
+}
+.blockNSl4:hover p{
+    text-decoration: underline;
+}
+.blockNSl5:hover p{
+    text-decoration: underline;
+}
+.podpodD2{
+    display: flex;
+    justify-content: center;
+}
+.podpodD2 p{
+    color: white;
+    text-decoration: none;
+    font-size: 220%;
+}
+.blockNSl0 p{
+    color: white;
+    text-decoration: none;
+    font-size: 220%;
+}
+.blockNSl1 p{
+    color: white;
+    text-decoration: none;
+    font-size: 220%;
+}
+.blockNSl2 p{
+    color: white;
+    text-decoration: none;
+    font-size: 220%;
+}
+.blockNSl3 p{
+    color: white;
+    text-decoration: none;
+    font-size: 220%;
+}
+.blockNSl4 p{
+    color: white;
+    text-decoration: none;
+    font-size: 220%;
+}
+.blockNSl5 p{
+    color: white;
+    text-decoration: none;
+    font-size: 220%;
+}
+.podD2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.zoglash1{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.698);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
