@@ -15,6 +15,7 @@
     color: white;
     font-size: 70px;
     line-height: 60px;
+    padding-right: 3.50px;
 }
 .PodBlH11{
     width: 30%;
@@ -55,6 +56,7 @@
     width: 22%;
     position: absolute;
     margin-left: 35%;
+    top: 60.3%;
 }
 .Backrooms2{
     position: absolute;
@@ -85,12 +87,13 @@
     width: 67px;
     height: 68px;
     margin-left: 60px;
+    border-radius: 5px;
 }
 .PodPodPodBlH221{
     display: flex;
     align-items: center;
     position: absolute;
-    top: 197%;
+    top: 203%;
 }
 .PodPodBlH221{
     display: flex;
@@ -109,6 +112,7 @@
 }
 .BludoH img{
     width: 100%;
+    border-radius: 10px;
 }
 .BludoH h4{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -138,7 +142,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 263%;
+    top: 264%;
 }
 .PodPodPodBlH2213 h3{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

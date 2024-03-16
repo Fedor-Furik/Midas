@@ -18,16 +18,11 @@ import Bludo10 from "./assetsBluda/Bludo10.png"
 import Bludo11 from "./assetsBluda/Bludo11.png"
 import Bludo12 from "./assetsBluda/Bludo12.png"
 export default function Home() {
-    const [flag3 ,setFlag3] = useState(false)
     let sum = 1
-    function chisla(){
-    if(sum !== 0 && flag3 === false){
-      setFlag3(!flag3)
-    } else if(sum === 0 && flag3 === true){
-      setFlag3(!flag3)   
+    let koN = 0
+    function dobav(){
+        localStorage.setItem('KoN',koN)
     }
-    }
-    
     return(
         <div className="ContainH">
             <div className="BlockH1">
@@ -36,8 +31,8 @@ export default function Home() {
                     <img className="Backrooms" src={Toch} alt="Error" />
                     <p className="numberPB1">+7 (499) 841-67-29</p>
                     <h6>delivery@midas.rest</h6>
-                    {flag3 && <img className="Losos" src={Losos} alt="Error" />}
-                    <button onClick={chisla()} className="BasketB"></button>
+                    <img className="Losos" src={Losos} alt="Error" />
+                    <button className="BasketB"></button>
                     <img className="Backrooms2" src={Toch2} alt="Error" />
                 </div>
                 <img className="hYamI" src={Yammi} alt="" />
@@ -55,7 +50,7 @@ export default function Home() {
                             <p>Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.</p>
                             <div className="PodPodPodBlH221">
                                 <h3>470 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                         <div className="BludoH">
@@ -65,7 +60,7 @@ export default function Home() {
                             <p>Невероятно нежные хинкали с ароматной начинкой из сыра моцареллы.</p>
                             <div className="PodPodPodBlH221">
                                 <h3>105 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                         <div className="BludoH">
@@ -75,7 +70,7 @@ export default function Home() {
                             <p>Пряные хинкали с начинкой из ароматной баранины со специями.</p>
                             <div className="PodPodPodBlH221">
                                 <h3>520 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                         <div className="BludoH">
@@ -85,7 +80,7 @@ export default function Home() {
                             <p>Доведенное до совершенства сочетание фермерской курочки, с салатом романо, и айсбергом, щедро сдобренное фирменным соусом «Цезарь».</p>
                             <div className="PodPodPodBlH221">
                                 <h3>525 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                         <div className="BludoH">
@@ -95,7 +90,7 @@ export default function Home() {
                             <p>Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи.</p>
                             <div className="PodPodPodBlH221">
                                 <h3>490 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                         <div className="BludoH">
@@ -105,7 +100,7 @@ export default function Home() {
                             <p>По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...</p>
                             <div className="PodPodPodBlH221">
                                 <h3>430 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                     </div>
@@ -117,7 +112,7 @@ export default function Home() {
                             <p>Не устоять: легендарный грузинский суп-рагу с фермерской говядиной, рисом, свежей зеленью и ароматными грузинскими специями.</p>
                             <div className="PodPodPodBlH2213">
                                 <h3>405 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                         <div className="BludoH">
@@ -127,7 +122,7 @@ export default function Home() {
                             <p>Сочная, хрустящая лепешка из фирменного теста, с начинкой из фермерской говядины, пряной кинзы и красного лука.</p>
                             <div className="PodPodPodBlH2213">
                                 <h3>340 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                         <div className="BludoH">
@@ -137,7 +132,7 @@ export default function Home() {
                             <p>Лепешка из фирменного теста с молодым шпинатом и экологически чистой зеленью.</p>
                             <div className="PodPodPodBlH2213">
                                 <h3>435 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                         <div className="BludoH">
@@ -147,7 +142,7 @@ export default function Home() {
                             <p>Классическое сочетание слабосоленой сёмги, сливочного сыра Маскарпоне и свежего органического огурца.</p>
                             <div className="PodPodPodBlH2213">
                                 <h3>535 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                         <div className="BludoH">
@@ -157,7 +152,7 @@ export default function Home() {
                             <p>Невероятно ароматный и насыщенный вкус рубленой телятины, свежей кинзы и грузинских специй в сочетании с тонким, фирменным тестом.</p>
                             <div className="PodPodPodBlH2213">
                                 <h3>450 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                         <div className="BludoH">
@@ -167,7 +162,7 @@ export default function Home() {
                             <p>Идеальное сочетание воздушного теста и нежнейшей начинки из утиного филе, свежей кинзы и лука.</p>
                             <div className="PodPodPodBlH2213">
                                 <h3>370 ₽</h3>
-                                <button className="BasketB2"></button>
+                                <button onClick={dobav()} className="BasketB2"></button>
                             </div>
                         </div>
                     </div>

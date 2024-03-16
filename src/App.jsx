@@ -37,7 +37,7 @@ function App(){
           <a onClick={render2}>ХОЛОДНОЕ ↓{flag2 && <div className="renderDiv2"><NavLink to="/ColdSnacks">ХОЛОДНЫЕ ЗАКУСКИ</NavLink><NavLink to="/salats">САЛАТЫ</NavLink></div>}</a> 
           <NavLink to='/newBeak'>СВЯЖАЯ ВЫПЕЧКА</NavLink>
           <NavLink to='/deserts'>ДЕСЕРТЫ</NavLink>
-          <NavLink to='/drinks'>НАПИТКИ</NavLink>
+          {/* <NavLink to='/drinks'>НАПИТКИ</NavLink> */}
         </nav>
         <div className="funct">
           {/* <NavLink to="/profile"><img src={Profil} alt="Error" /></NavLink> */}

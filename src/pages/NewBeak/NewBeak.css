@@ -23,6 +23,9 @@
     width: 15.186%;
 }
 .BludoH2 img{
+    border-radius: 10px;
+}
+.BludoH2 img{
     width: 100%;
     height: 65%;
 }
