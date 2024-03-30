@@ -26,10 +26,11 @@ export default function Home() {
         doF.img = im
         fi.push(doF)
         localStorage.ff = JSON.stringify(fi);
-    let resh = document.querySelector(`.${klas}`)
-    resh.id = "Act"
+       let resh = document.querySelector(`.${klas}`)
+       localStorage.setItem("z1",true)
+       resh.setAttribute('disabled',localStorage.getItem("z1"))
+       resh.id = "Act"
     }
-
     return(
         <div className="ContainH">
             <div className="BlockH1">
