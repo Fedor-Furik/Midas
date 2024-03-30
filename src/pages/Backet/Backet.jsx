@@ -1,59 +1,127 @@
 import { useState } from "react"
-// import photos from "./photo.json"
-// import Card from "./Card"
+import {NavLink} from "react-router-dom"
 import minys from "./assets/minys.png"
 import plus from "./assets/plus.png"
-import xch from "./assets/Bludo11.png"
 import krest from "./assets/kr.png"
 import './Backet.css'
+import {Bludo1,Bludo2,Bludo3,Bludo4,Bludo5,Bludo6,Bludo7,Bludo8,Bludo9,Bludo10,Bludo11,Bludo12,Bludo13,Bludo14,Bludo15,Bludo16,Bludo17,Bludo18,Bludo19,Bludo20,Bludo21,Bludo22,Bludo23,Bludo24,Bludo25,Bludo26,Bludo27,Bludo28,Bludo29,Bludo30,Bludo31,Bludo32,Bludo33,Bludo34,Bludo35,Bludo36,Bludo37,Bludo38,Bludo39,Bludo40,Bludo41,Bludo42,Bludo43,Bludo44,Bludo45,Bludo46,Bludo47} from "../../assetsUn"
+
 export default function Backet() {
-    localStorage.setItem('koN',1)
+    const Picters = [Bludo1,Bludo2,Bludo3,Bludo4,Bludo5,Bludo6,Bludo7,Bludo8,Bludo9,Bludo10,Bludo11,Bludo12,Bludo13,Bludo14,Bludo15,Bludo16,Bludo17,Bludo18,Bludo19,Bludo20,Bludo21,Bludo22,Bludo23,Bludo24,Bludo25,Bludo26,Bludo27,Bludo28,Bludo29,Bludo30,Bludo31,Bludo32,Bludo33,Bludo34,Bludo35,Bludo36,Bludo37,Bludo38,Bludo39,Bludo40,Bludo41,Bludo42,Bludo43,Bludo44,Bludo45,Bludo46,Bludo47]
+    const [inputOne, setInput] = useState('');
     let massiv = []
-    let mamaMia = 0
-    let b = localStorage.getItem('koN')
-    // let n = b * 2
-    for(let i=0;i < b ; i++){
-        let vrNaz = "Хачапури по-аджарский" 
+    let mas = JSON.parse(localStorage.ff)
+    let b = mas.length
+    let dopN = 0
+    const [count2,setCount2] = useState(b)
+    const [count5,setCount5] = useState(mas.length)
+    for(let i = 0;i < mas.length; i++){
+        let imgg = mas[i].img
+        let vrPric = Number(mas[i].opic)
+        let vrNaz = mas[i].name
         const [count,setCount] = useState(1)
         function Fmin(){
+        for(let b = 0;b< 47;b++){
+            if (imgg == `Bludo${b}`){
+                imgg = Picters[b]
+            }
+        }
             if (count >= 2){
-              setCount(count - 1) 
+              setCount(count - 1)
+              setCount3(count3 - vrPric)
+            }
+            if (count3 < 0){
+                setCount3(0)
             }
         }
         function Fplus(){
             setCount(count + 1)
+            setCount3(count3 + vrPric)
         }
-        // function delC(){
-        //     b -= 1
-	    // };
-        let vrPric = 455
         let vrSumPric = vrPric * count
-        mamaMia += vrSumPric
+        dopN += vrPric
+        function delC2 (){
+            if(count2 != 0){
+                setCount2(count2 - 1)
+             }
+            setCount5(count5 - 1)
+        }
+        function delC(ir){
+            if (count3 - vrSumPric < 0) {
+                setCount3(0)
+            } 
+            else{
+                setCount3(count3 - vrSumPric)
+            }
+            const div = document.getElementById(ir)
+            const parent = div.parentNode
+            parent.removeChild(div)
+            delC2()
+	    }
         let card = (
             <div className='CardDivs' id={`i${i}`}>
-                <img className="ImgPrev" src={xch} alt="" />
-                <div className="cardDD1"><h9>{vrNaz}</h9></div>
-                <div className="cardDD2"><h11>{vrPric} ₽</h11><button className="Ipitals"><img onClick={Fmin} className="znaks1" src={minys} alt="Error" /><p>{count}шт</p><img onClick={Fplus} className="znaks2" src={plus} alt="er" /></button><h11 className="obsa">{vrSumPric} ₽</h11></div>
-                <div className="cardDD3"><img src={krest} alt="Error" /></div>
+                <img className="ImgPrev" src={imgg} alt="" />
+                <div className="cardDD1"><p id={`iii${i}`}>{vrNaz}</p></div>
+                <div className="cardDD2"><p className="lol2">{vrPric} ₽</p><button className="Ipitals"><img onClick={Fmin} className="znaks1" src={minys} alt="Error" /><p className="lol" id={`iiii${i}`}>{count}шт</p><img onClick={Fplus} className="znaks2" src={plus} alt="er" /></button><p id={`ii${i}`} className="obsa">{vrSumPric} ₽</p></div>
+                <div className="cardDD3" onClick={delC.bind(this,`i${i}`)}><img src={krest} alt="Error" /></div>
             </div>
             )
         massiv.push(card)
     }
-    // function ui(){
-    //     let bruh = document.getElementById('ryy').value
-    //     if (bruh == "1234/5678/9000"){
-    //         mamaMia -= 3000
-    //     }
-    // }
+    const [count3,setCount3] = useState(dopN)
+    const [count4,setCount4] = useState(0)
+    function chit() {
+        let pi = document.getElementById("pkast")
+        if (`${inputOne}` == "1234/5678/9000" && count4 == 0 && count3 >= 1000) {
+            setCount3(count3 - 1000)
+            setCount4(count4 + 1)
+            pi.style.color = "lightgreen"
+            pi.innerText = "CODE SUCCESSFULLY ACTIVATED"
+        }
+        else if(count4 != 0 && `${inputOne}` == "1234/5678/9000"){
+            pi.style.color = "red"
+            pi.innerText = "THE CODE HAS ALREADY ACTIVATED"
+        }
+        else if(`${inputOne}` == "1234/5678/9000" && count4 == 0 && count3 < 1000){
+            pi.style.color = "red"
+            pi.innerText = "THE FINAL  AMOUNT MUST BE MORE 1000"
+        }
+        else{
+            pi.style.color = "red"
+            pi.innerText = "INVALID PROMOTIAL CODE"
+        }
+        setInput("")
+    }
+    // let isLinkEnabled = false;
+    localStorage.ff2 = JSON.stringify([])
+    function mat(sye,kov){
+        if (count5 != 0){
+        // isLinkEnabled = true
+        for(let i = 0;i < kov;i++){
+            let fi2 = JSON.parse(localStorage.ff2)
+            let doF = new Object()
+            doF.name = document.getElementById(`iii${i}`).textContent
+            doF.price = document.getElementById(`ii${i}`).textContent
+            doF.kol = document.getElementById(`iiii${i}`).textContent
+            fi2.push(doF)
+            localStorage.ff2 = JSON.stringify(fi2);
+        }
+        let fi3 = JSON.parse(localStorage.ff2)
+        fi3.unshift(sye)
+        localStorage.ff2 = JSON.stringify(fi3);
+        // console.log(isLinkEnabled)
+        }
+    }
+    
     return (
     <div className="ContainB">
         <div className="KorD">
           <h1>Корзина</h1>
-          <h7>{b} ШТ</h7>
+          <p className="lol4">{count2} ШТ</p>
         </div>
         <div className="RocpD">
-            <div className="rop1"><h8>БЛЮДО:</h8></div>
-            <div className="rop2"><h8>ЦЕНА:</h8><h8>КОЛ-ВО:</h8><h8>СУММА:</h8></div>
+            <div className="rop1"><p className="lol3">БЛЮДО:</p></div>
+            <div className="rop2"><p className="lol3">ЦЕНА:</p><p className="lol3">КОЛ-ВО:</p><p className="lol3">СУММА:</p></div>
         </div>
          <div className="BacD">
             {massiv}
@@ -62,17 +130,17 @@ export default function Backet() {
             <div className="podFu1">
                 <div className="podFu2">
                     <div className="podFu4"><p>ПРИМЕНИТЬ ПРОМОКОД:</p></div>
-                    <div className="podFu4" ><input type="text" placeholder="XXXX/XXXX/XXXX"/></div>
-                    <div className="podFu4"><p>ИТОГО К ОПЛАТЕ: {mamaMia} ₽</p></div>
-                    <div className="podFu4"><button className="oformB2">ОФОРМИТЬ ЗАКАЗ</button></div>
+                    <div className="podFu4" ><input id="tds" value={inputOne} onChange={(event) => setInput(event.target.value)} type="tel" placeholder="XXXX/XXXX/XXXX"/></div>
+                    <div className="podFu4"><p className="pkast" id="pkast"></p></div>
+                    <div className="podFu4"><p>ИТОГО К ОПЛАТЕ: {count3} ₽</p></div>
+                    <NavLink to="/Oform"><div className="podFu4"><button onClick={mat.bind(this,count3,count5)} className="oformB2">ОФОРМИТЬ ЗАКАЗ</button></div></NavLink> 
+                    {/* to={isLinkEnabled ? '/Oform' : '#'} */}
                 </div>
                 <div className="podFu3">
-                    <button className="oformB1">ПРИМЕНИТЬ</button>
+                    <button onClick={chit} className="oformB1">ПРИМЕНИТЬ</button>
                 </div>
             </div>
         </div>
     </div>
       )
 }
-// id="ryy"
-// onClick={ui()}

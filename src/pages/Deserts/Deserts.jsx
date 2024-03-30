@@ -1,8 +1,8 @@
-import Bludo1 from "./assets/Bludo1.png"
-import Bludo2 from "./assets/Bludo2.png"
-import Bludo3 from "./assets/Bludo3.png"
-import Bludo4 from "./assets/Bludo4.png"
-import Bludo5 from "./assets/Bludo5.png"
+import Bludo1 from "./assets/Bludo7.png"
+import Bludo2 from "./assets/Bludo8.png"
+import Bludo3 from "./assets/Bludo9.png"
+import Bludo4 from "./assets/Bludo10.png"
+import Bludo5 from "./assets/Bludo11.png"
 import "./Deserts.css"
 import {NavLink} from "react-router-dom"
 export default function Home() {

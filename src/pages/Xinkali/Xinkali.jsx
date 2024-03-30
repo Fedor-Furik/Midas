@@ -1,5 +1,5 @@
-import Bludo1 from "./assets/Bludo1.png"
-import Bludo2 from "./assets/Bludo2.png"
+import Bludo1 from "./assets/Bludo46.png"
+import Bludo2 from "./assets/Bludo47.png"
 import "./Xinkali.css"
 import {NavLink} from "react-router-dom"
 export default function Home() {

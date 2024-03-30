@@ -1,0 +1,328 @@
+body{
+    background-image: url("../../assets/Group 63.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.zogOfo{
+    display: flex;
+    position: absolute;
+    left: 40px;
+    top: 150px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120px;
+}
+.pBlox1{
+    width: 63%;
+    margin-top: 300px;
+    margin-left: 40px;
+}
+.zog1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.pBlox2{
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    margin-right: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    height: 1075px;
+}
+.CardDivs2{
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+.ImgPrev2{
+    height: 150px;
+}
+.cardDD4 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 32px;
+}
+.cardDD5 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(180, 180, 180);
+    font-size: 20px;
+}
+.cardDD6 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cardDD4{
+    margin-left: 20px;
+    width: 42%;
+}
+.cardDD5{
+    position: relative;
+    right: -50px;
+}
+.cardDD6{
+    position: relative;
+    right: -80px;
+}
+#eo{
+    color: white;
+    font-size: 50px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+#eo2{
+    color: rgb(159, 159, 159);
+    font-size: 45px;
+    font-weight: normal;
+}
+.bru{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+}
+.cont{
+    height: 94%;
+    overflow-y: scroll;
+    overflow: auto;
+    scrollbar-color: white rgb(80, 80, 80);
+}
+.vsIn{
+    padding-left: 20px;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 160%;
+}
+.obobsh{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    display: flex;
+    padding-left: 10%;
+    width: 100%;
+}
+.avto1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+.avto2{
+    color: rgb(167, 167, 167);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+#r1{
+    margin-top: 40px;
+}
+.pBlox3{
+    width: 63%;
+    margin-left: 40px;
+}
+.obobsh2{
+    padding-top: 80px;
+}
+.ppO1{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.ppO2{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.DlFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.DlFlex p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 42px;
+}
+.bbb1{
+    padding-bottom: 20px;
+    padding-top: 30px;
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.007);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.bbb2{
+    padding-bottom: 20px;
+    padding-top: 30px;
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.007);
+    
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#noCel{
+    border: dashed 3px rgb(79, 79, 79);
+}
+.noI{
+    margin-top: 20px;
+    color: rgb(181, 181, 181);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.raz p{
+    color: rgb(162, 162, 162);
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.raz{
+    margin-top: 80px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around; 
+}
+.raz2{
+    height: 400px;
+    margin-top: 55px;
+    margin-right: 20px;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around; 
+}
+.raz2 p{
+    color: rgb(162, 162, 162);
+    font-size: 27px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#Cel{
+    border: dashed 3px yellow;
+}
+#r4{
+    height: 140px;
+}
+.avto3{
+    color: rgb(183, 183, 183);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+.nn2{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 160%;
+}
+.nn2 p{
+    position: relative;
+    right: -70px;
+    font-size: 27px;
+    margin-top: 10px;
+    color: rgb(162, 162, 162);
+}
+#r5{
+    width: 30%;
+}.obobsh3{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    width: 68%;
+}
+.blox3{
+    width: 64%;
+    margin-top: 70px;
+    padding-left: 40px;
+    margin-bottom: 100px;
+}
+.bbb4{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: dashed 3px rgb(79, 79, 79);
+    width: 91%;
+}
+.bbb5{
+    margin-top: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: dashed 3px rgb(79, 79, 79);
+    width: 91%;
+}
+.bbb6{
+    margin-top: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: dashed 3px rgb(79, 79, 79);
+    width: 91%;
+}
+.ppO3{
+    width: 100%;
+}
+.knip{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+    border: solid rgb(127, 127, 127) 2px;
+}
+.knip2{
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    border-radius: 90px;
+    margin-bottom: 1px;
+    margin-right: 0.3px;
+    visibility: hidden;
+}
+.vseO{
+    margin-left: 60px;
+    font-size: 50px;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.VCard{
+    margin-left: 60px;
+    width: 59%;
+    margin-top: 15px;
+}
+#Cel2{
+    border: solid yellow 2px;
+}
+.obobsh2{
+    margin-bottom: 40px;
+}
+#nach:active{
+    background-color: rgb(183, 143, 0);
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

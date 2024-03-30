@@ -1,7 +1,7 @@
-import Bludo1 from "./assets/Bludo1.png"
-import Bludo2 from "./assets/Bludo2.png"
-import Bludo3 from "./assets/Bludo3.png"
-import Bludo4 from "./assets/Bludo4.png"
+import Bludo1 from "./assets/Bludo42.png"
+import Bludo2 from "./assets/Bludo43.png"
+import Bludo3 from "./assets/Bludo44.png"
+import Bludo4 from "./assets/Bludo45.png"
 import "./Soups.css"
 import {NavLink} from "react-router-dom"
 export default function Home() {
