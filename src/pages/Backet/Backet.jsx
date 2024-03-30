@@ -19,13 +19,15 @@ export default function Backet() {
         let imgg = mas[i].img
         let vrPric = Number(mas[i].opic)
         let vrNaz = mas[i].name
-        const [count,setCount] = useState(1)
-        function Fmin(){
-        for(let b = 0;b< 47;b++){
+        console.log(imgg)
+        for(let b = 0;b < 47; b++){
             if (imgg == `Bludo${b}`){
-                imgg = Picters[b]
+                imgg = Picters[b - 1]
+                console.log(b)
             }
         }
+        const [count,setCount] = useState(1)
+        function Fmin(){
             if (count >= 2){
               setCount(count - 1)
               setCount3(count3 - vrPric)
@@ -60,7 +62,7 @@ export default function Backet() {
 	    }
         let card = (
             <div className='CardDivs' id={`i${i}`}>
-                <img className="ImgPrev" src={imgg} alt="" />
+                <img className="ImgPrev" id={`iiiii${i}`} src={imgg} alt="" />
                 <div className="cardDD1"><p id={`iii${i}`}>{vrNaz}</p></div>
                 <div className="cardDD2"><p className="lol2">{vrPric} ₽</p><button className="Ipitals"><img onClick={Fmin} className="znaks1" src={minys} alt="Error" /><p className="lol" id={`iiii${i}`}>{count}шт</p><img onClick={Fplus} className="znaks2" src={plus} alt="er" /></button><p id={`ii${i}`} className="obsa">{vrSumPric} ₽</p></div>
                 <div className="cardDD3" onClick={delC.bind(this,`i${i}`)}><img src={krest} alt="Error" /></div>
@@ -103,6 +105,7 @@ export default function Backet() {
             doF.name = document.getElementById(`iii${i}`).textContent
             doF.price = document.getElementById(`ii${i}`).textContent
             doF.kol = document.getElementById(`iiii${i}`).textContent
+            doF.img = document.getElementById(`iiiii${i}`).getAttribute("src")
             fi2.push(doF)
             localStorage.ff2 = JSON.stringify(fi2);
         }
