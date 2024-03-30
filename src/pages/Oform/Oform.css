@@ -186,7 +186,8 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .raz{
-    margin-top: 80px;
+    /* margin-top: 80px; */
+    margin-top: 20px;
     margin-right: 10px;
     display: flex;
     flex-direction: column;

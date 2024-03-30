@@ -117,7 +117,7 @@ export default function Oform(){
                           <p>EMAIL</p>
                         </div>
                         <div className="inputsi">
-                          {flag34 && <div className="bruh"><p className="avto1">Уже покупали у нас?</p> <p className="avto2">Войдите в личный кабинет, и все ваши данный автоматически заполнятся</p></div> }
+                          {/* {flag34 && <div className="bruh"><p className="avto1">Уже покупали у нас?</p> <p className="avto2">Войдите в личный кабинет, и все ваши данный автоматически заполнятся</p></div> } */}
                           <input className="vsIn" id="r1" type="name" required/>
                           <input className="vsIn" id="r2" type="telephone" required/>
                           <input className="vsIn" id="r3" type="email" required/>
