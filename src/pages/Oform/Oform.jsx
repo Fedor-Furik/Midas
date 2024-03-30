@@ -4,7 +4,6 @@ import xch from "../../assets/Bludo11.png"
 import Kar from "../../assets/Group 66.png"
 import {Bludo1,Bludo2,Bludo3,Bludo4,Bludo5,Bludo6,Bludo7,Bludo8,Bludo9,Bludo10,Bludo11,Bludo12,Bludo13,Bludo14,Bludo15,Bludo16,Bludo17,Bludo18,Bludo19,Bludo20,Bludo21,Bludo22,Bludo23,Bludo24,Bludo25,Bludo26,Bludo27,Bludo28,Bludo29,Bludo30,Bludo31,Bludo32,Bludo33,Bludo34,Bludo35,Bludo36,Bludo37,Bludo38,Bludo39,Bludo40,Bludo41,Bludo42,Bludo43,Bludo44,Bludo45,Bludo46,Bludo47} from "../../assetsUn"
 export default function Oform(){
-    const Picters = [Bludo1,Bludo2,Bludo3,Bludo4,Bludo5,Bludo6,Bludo7,Bludo8,Bludo9,Bludo10,Bludo11,Bludo12,Bludo13,Bludo14,Bludo15,Bludo16,Bludo17,Bludo18,Bludo19,Bludo20,Bludo21,Bludo22,Bludo23,Bludo24,Bludo25,Bludo26,Bludo27,Bludo28,Bludo29,Bludo30,Bludo31,Bludo32,Bludo33,Bludo34,Bludo35,Bludo36,Bludo37,Bludo38,Bludo39,Bludo40,Bludo41,Bludo42,Bludo43,Bludo44,Bludo45,Bludo46,Bludo47]
     let mas = JSON.parse(localStorage.ff2)
     let otr = []
     const [sost1,setSost1] = useState("noCel")
